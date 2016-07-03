@@ -49,32 +49,31 @@ puts "---------"
 	def repeat_string(string, n)
 		1.upto(n) do
 			puts (string)
-		end
+    end
 	end
-
 again = Homework.new
 
-again.repeat_string("poke", 5)
+again.repeat_string("poke", 3)
 
 puts "---------"
+  def calendar(h, d)
+		x = Hash[h.zip d]
 
-	holiday = ["Xmas", "Halloween", "Independance Day"]
-	date = ["Dec 25th", "Oct 31st", "July 4th"]
-
-	def calendar (a1, a2)
-		hashiday = {a1 => a2}
+    end
+    
 	end
+   
+holiday = ["Xmas", "Halloween", "Independance Day"]
+   date = ["Dec 25th", "Oct 31st", "July 4th"]
 
-	what_day = Homework.new
+holiday_hash = Homework.new
 
-	x = 0
 
-	while x <= (date.length - 1)
-		puts(what_day.calendar(holiday[x], date[x]))
-		x += 1
-	end
+puts holiday_hash.calendar(holiday, date)
 
-end
+
+
+
 
 #  instance variables are a variable defined in a class. each instantiated object of the class has a separate copy.
 
